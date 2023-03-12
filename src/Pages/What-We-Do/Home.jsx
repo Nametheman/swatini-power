@@ -5,6 +5,11 @@ import streelLightImg from "../../Assets/Images/streetlight.webp";
 import Hero from "./Hero";
 import generator from "../../Assets/Images/poweful.png";
 import { Link } from "react-router-dom";
+import Do1 from "./Do1";
+import Do2 from "./Do2";
+import Do3 from "./Do3";
+import Do4 from "./Do4";
+import Models from "./Models";
 
 const Home = () => {
   return (
@@ -41,6 +46,15 @@ const Home = () => {
           <Link to="#">MORE ABOUT OUR TECHNOLOGIES</Link>
         </div>
       </div>
+      <h3>Reduce your energy costs</h3>
+      <Do1 />
+      <h3>Finance your energy renovation project</h3>
+      <Do2 />
+      <h3>Reduce CO2 emissions</h3>
+      <Do3 />
+      <h3>Develop your renewable energy project</h3>
+      <Do4 />
+      <Models />
     </Container>
   );
 };
@@ -89,6 +103,13 @@ const Container = styled.div`
         width: 60%;
       }
     }
+  }
+
+  h3 {
+    text-align: center;
+    font-family: "Coda", cursive;
+    font-size: 40px;
+    margin-top: 90px;
   }
 `;
 

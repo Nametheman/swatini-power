@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "What we do", path: "/what-we-do", id: "link2" },
     {
       name: "Technologies & Solutions",
-      path: "/technologies-solutions",
+      path: "/technolgies-and-solutions",
       id: "link3",
     },
     {

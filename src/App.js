@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Landing, About, What_We_Do } from "./Pages";
+import { Landing, About, What_We_Do, Contact, Solutions } from "./Pages";
 
 function App() {
   return (
@@ -9,6 +9,8 @@ function App() {
         <Route path="/homepage" element={<Landing />} />
         <Route path="/about" element={<About />} />
         <Route path="/what-we-do" element={<What_We_Do />} />
+        <Route path="/technolgies-and-solutions" element={<Solutions />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

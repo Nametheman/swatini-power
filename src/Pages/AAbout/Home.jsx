@@ -39,7 +39,9 @@ const Home = () => {
 };
 
 export default Home;
-const Container = styled.div``;
+const Container = styled.div`
+  margin-bottom: 40px;
+`;
 const Absolutes = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.544), rgba(0, 9, 13, 0.661)),
     url(${headBg});

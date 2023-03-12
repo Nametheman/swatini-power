@@ -30,7 +30,7 @@ const WhySwatini = () => {
   ];
   return (
     <Container>
-      <h3 className="heading">Why Chooose Swatini Power?</h3>
+      {/* <h3 className="heading">Why Chooose Swatini Power?</h3> */}
       <Content>
         {services.map((service) => {
           return (

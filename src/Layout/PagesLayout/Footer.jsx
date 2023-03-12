@@ -41,7 +41,7 @@ const Container = styled.footer`
   background-color: #000;
   color: #fff;
   padding: 50px 130px 30px;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
