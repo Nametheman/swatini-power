@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import bg from "../../Assets/Images/open_book.avif";
 import Hero from "./Hero";
+import escoImg from "../../Assets/Images/swatini_esco.jpeg";
 
 const Esco = () => {
   return (
@@ -30,6 +31,10 @@ const Esco = () => {
             their core business. Our guarantee of results is backed by the
             savings the client will experience, which will be used to repay us.
           </p>
+
+          <div className="escoImg">
+            <img src={escoImg} alt="" />
+          </div>
         </div>
         <div className="rightFrame">
           <p>
@@ -109,6 +114,17 @@ const Content = styled.div`
 
   .leftFrame {
     flex: 1 0 31rem;
+
+    .escoImg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 450px;
+        height: 400px;
+      }
+    }
 
     h4 {
       color: ${process.env.REACT_APP_SECONDARY_COLOR};
