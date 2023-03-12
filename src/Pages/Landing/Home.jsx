@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Services from "./Services";
 import WhySwatini from "./WhySwatini";
 import { FaCaretRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
 
       <div className="learnMore">
         <FaCaretRight />
-        <a href="#">Learn More</a>
+        <Link to="/about">Learn More</Link>
       </div>
     </Container>
   );

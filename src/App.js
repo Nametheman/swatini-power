@@ -1,5 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Landing, About, What_We_Do, Contact, Solutions } from "./Pages";
+import {
+  Landing,
+  About,
+  What_We_Do,
+  Contact,
+  Solutions,
+  EscoModel,
+} from "./Pages";
 
 function App() {
   return (
@@ -11,6 +18,7 @@ function App() {
         <Route path="/what-we-do" element={<What_We_Do />} />
         <Route path="/technolgies-and-solutions" element={<Solutions />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/esco-model" element={<EscoModel />} />
       </Routes>
     </Router>
   );

@@ -7,20 +7,7 @@ const Hero = () => {
   return (
     <Container>
       <div className="content">
-        <h2>
-          Optimizing Energy <br /> Efficiency
-        </h2>
-        <p>
-          We provide energy-related services and implements energy efficiency
-          projects <br />
-          on behalf of our clients. We specialize in energy auditing,
-          energy-efficient <br /> retrofits, and the installation of renewable
-          energy systems. <br />
-        </p>
-
-        <div className="escolink">
-          <Link to="/esco-model">ESCO Model</Link>
-        </div>
+        <h2>ESCO Model</h2>
       </div>
     </Container>
   );
@@ -35,12 +22,12 @@ const Container = styled.div`
   .content {
     width: 100vw;
     padding: 0 10%;
-    margin-top: 17%;
+    margin-top: 19%;
     color: #fff;
     font-family: "Coda", cursive;
 
     h2 {
-      font-size: 90px;
+      font-size: 40px;
       letter-spacing: 1.9px;
       line-height: 1.1;
       /* font-weight: bold; */
