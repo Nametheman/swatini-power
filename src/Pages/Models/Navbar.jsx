@@ -38,6 +38,7 @@ const Navbar = () => {
 
   const Navigation = styled.nav`
     width: 100%;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
