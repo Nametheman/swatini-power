@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import lekkiBridge from "../../Assets/Images/lekki-bridge.jpeg";
+import lekkiBridge from "../../Assets/Images/about.jpeg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

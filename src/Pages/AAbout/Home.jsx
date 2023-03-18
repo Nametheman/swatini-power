@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import headBg from "../../Assets/Images/about_real.jpeg";
+import headBg from "../../Assets/Images/about.jpeg";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import OurTeam from "./OurTeam";
@@ -20,14 +20,14 @@ const Home = () => {
         <h3 className="heading">Our Mission</h3>
         <div className="mission">
           <p>
-            Our mission is to deliver to all our clients innovative,
-            technologically advanced and reliable solutions in the field of
-            energy services, that strongly improve their business
-            competitiveness, energy efficiency and environmental footprint.
+            Our mission is to empower businesses and individuals with
+            affordable, reliable, and sustainable energy solutions, while
+            contributing to the global effort to combat climate change and
+            improve energy access.
           </p>
           <p>
-            Our experts, diversified experiences and result-driven operations
-            attest to our commitment.
+            Our dedication to delivering results is supported by the diverse
+            experience of our experts and the effectiveness of our operations.
           </p>
         </div>
 
@@ -46,6 +46,8 @@ const Absolutes = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.544), rgba(0, 9, 13, 0.661)),
     url(${headBg});
   height: 50vh;
+  max-width: 1440px;
+
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;

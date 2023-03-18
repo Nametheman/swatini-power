@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import streelLightImg from "../../Assets/Images/streetlight.webp";
+import streelLightImg from "../../Assets/Images/what_we_do.jpeg";
 import Hero from "./Hero";
 import generator from "../../Assets/Images/poweful.png";
 import { Link } from "react-router-dom";
@@ -20,30 +20,33 @@ const Home = () => {
       <Hero />
       <div className="content1">
         <p>
-          We solve problems for our clients. By maximizing energy efficiency, we
-          can lower your production costs, reduce CO2 emissions, improve comfort
-          for your employees and visitors, and most importantly help you save
-          money. We design energy efficiency projects based on thorough analyses
-          of your consumption and needs, and then our team of engineers
-          implements the projects in a short time frame and with minimal
-          disruption of your operations. We maintain and operate the equipment
-          installed for the duration of the contract you sign with us. <br />{" "}
-          <br />
-          We can yield concrete results with no CAPEX expenditure on your part
-          because on top of all the engineering work we do, we also finance the
-          projects. You repay us from the savings you achieve thanks to improved
-          energy efficiency and lowered costs. <br /> <br /> Resalta also
-          develops large scale renewable energy projects. Our goal is to
-          increase renewables in the energy mix of each country we operate in.
-          Combined with our efforts to increase energy efficiency for companies
-          and public institutions, we hope to protect the environment for future
-          generations. <br /> <br /> You can find out more about the variety of
-          services that we offer below – this is how we help you achieve your
-          energy goals.
+          At Swatini Power Ltd, we solve the energy problems of our clients. We
+          offer Energy-as-a-Service (EaaS) solutions for our commercial and
+          industrial clients. Our mission is to help businesses in Nigeria
+          achieve their sustainability goals and reduce their energy costs
+          through the implementation of efficient and sustainable energy
+          solutions.
+          <br /> <br />
+          At Swatini Power Ltd, we understand that energy is a critical
+          component of any business. However, the unstable power supply from the
+          national grid can be a significant challenge, driving up costs and
+          hindering operations, we are also aware that traditional energy
+          procurement models can be challenging for businesses due to high
+          upfront capital costs and ongoing operational expenses. That's why we
+          offer an EaaS model that allows businesses to access sustainable
+          energy solutions without the financial burden and risks associated
+          with owning and operating their own energy systems. <br /> <br /> Our
+          EaaS model is based on a pay-as-you-go or long-term power purchase
+          agreement that allows businesses to access reliable and affordable
+          energy solutions without the need for upfront capital expenditure. We
+          design, develop, finance, and implement customized energy solutions
+          that bring immediate relief to our clients.
         </p>
         <div className="img_container">
           <img src={generator} alt="" />
-          <Link to="#">MORE ABOUT OUR TECHNOLOGIES</Link>
+          <Link to="/technolgies-and-solutions">
+            MORE ABOUT OUR TECHNOLOGIES
+          </Link>
         </div>
       </div>
       <h3>Reduce your energy costs</h3>
@@ -118,6 +121,7 @@ const Absolutes = styled.section`
     url(${streelLightImg}), no-repeat, center;
   height: 50vh;
   width: 100vw;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

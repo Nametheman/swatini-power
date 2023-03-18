@@ -11,6 +11,9 @@ body {
   font-family: "DM Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 code {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import streelLightImg from "../../Assets/Images/industrial.jpeg";
+import streelLightImg from "../../Assets/Images/technology2.jpeg";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import WhySwatini from "./WhySwatini";
@@ -31,6 +31,7 @@ const Absolutes = styled.section`
     url(${streelLightImg}), no-repeat, center;
   height: 50vh;
   width: 100vw;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

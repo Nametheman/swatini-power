@@ -46,6 +46,7 @@ const Absolutes = styled.section`
     url(${streelLightImg}), no-repeat, center;
   height: 50vh;
   width: 100vw;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

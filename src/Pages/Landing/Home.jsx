@@ -67,6 +67,7 @@ const HeroSection = styled.div``;
 const Absolutes = styled.section`
   background: linear-gradient(rgba(56, 182, 255, 0.35), rgba(0, 9, 13, 0.65)),
     url(${lekkiBridge}), no-repeat, center;
-  height: 100vh;
+  height: 800px;
   width: 100vw;
+  max-width: 1440px;
 `;

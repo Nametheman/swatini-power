@@ -12,4 +12,7 @@ const index = ({ children }) => {
 };
 
 export default index;
-const Container = styled.div``;
+const Container = styled.div`
+  max-width: 1440px;
+  width: 100%;
+`;

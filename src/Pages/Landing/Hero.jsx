@@ -11,11 +11,9 @@ const Hero = () => {
           Optimizing Energy <br /> Efficiency
         </h2>
         <p>
-          We provide energy-related services and implements energy efficiency
-          projects <br />
-          on behalf of our clients. We specialize in energy auditing,
-          energy-efficient <br /> retrofits, and the installation of renewable
-          energy systems. <br />
+          We offer end-to-end energy-efficient solutions to commercial and
+          industrial clients <br /> from design and development to financing and
+          implementation.
         </p>
 
         <div className="escolink">
