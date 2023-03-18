@@ -11,7 +11,7 @@ const Footer = () => {
             <h3>SWATINI</h3>
             <p>
               11, Itelorun Close, off Alhaji-Jimoh Street, <br /> Adeniyi-Jones,
-              Ikeja, Lagos.
+              Ikeja, Lagos, Nigeria.
             </p>
 
             <div className="info">
