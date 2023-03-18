@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="row">
-            <h3>CERTIFICATES</h3>
+            <h3>TECHNOLOGY PARTNERS</h3>
           </div>
         </div>
       </div>
