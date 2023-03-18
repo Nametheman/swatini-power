@@ -8,14 +8,25 @@ const WhoWeAre = () => {
       <div className="flexContent">
         <h3 className="title">Who we are</h3>
         <p>
-          Resalta was founded in 2011 with the aim of becoming the leading
-          provider of energy services in the region. Within six years we have
-          registered incredible growth, gained a wealth of experience and helped
-          countless companies and public institutions lower their energy costs,
-          improve their energy efficiency and reduce their carbon footprints.
-          Our goal remains unchanged and we continue to diversify our service
-          portfolio in order to consistently offer the best solutions to our
-          clients’ energy challenges.
+          At Swatini Power Ltd, we are a team of experts committed to providing
+          reliable, sustainable, and affordable energy solutions to our clients.
+          We are passionate about addressing the energy needs of our clients and
+          creating a greener future for all.
+        </p>
+        <p>
+          On-site solar solutions are an excellent choice for businesses seeking
+          to reduce their electricity costs. Our solar installations are
+          custom-designed to meet your site requirements and installed directly
+          on your premises. We offer innovative financing options, including
+          Opex (zero capital investment), Capex (client owns the power plant),
+          and easy EMIs, making on-site solar solutions affordable for everyone.
+          Our Off-site solutions provide a great opportunity for industries with
+          high energy demand but limited space for solar installations within
+          their premises. Through off-site solar, we will generate solar energy
+          from a remote location and transmit it through the grid infrastructure
+          to meet the bulk energy requirements of our clients. Our clients rely
+          on off-site solar to help meet their Renewable Purchase Obligations
+          (RPOs) and long-term energy transition goals.
         </p>
       </div>
       <div className="flexContent">
@@ -47,6 +58,7 @@ const Container = styled.div`
     p {
       color: #000000c3;
       letter-spacing: 1.02px;
+      margin-bottom: 10px;
     }
     img {
       width: 100%;

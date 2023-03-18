@@ -4,14 +4,14 @@ import styled from "styled-components";
 const OurTeam = () => {
   return (
     <Container>
-      <h3 className="heading">Our Team</h3>
+      <h3 className="heading">Our Vision</h3>
 
       <Content>
         <p>
-          Our mission is to deliver to all our clients innovative,
-          technologically advanced and reliable solutions in the field of energy
-          services, that strongly improve their business competitiveness, energy
-          efficiency and environmental footprint.
+          Our vision is to become a leading provider of Energy as a Service
+          (EaaS) solutions in the region, delivering innovative, cost-effective,
+          and environmentally friendly solutions that enable our clients to
+          achieve their sustainability goals.
         </p>
         <p>
           Our experts, diversified experiences and result-driven operations

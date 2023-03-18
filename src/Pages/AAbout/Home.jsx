@@ -26,8 +26,12 @@ const Home = () => {
             improve energy access.
           </p>
           <p>
-            Our dedication to delivering results is supported by the diverse
-            experience of our experts and the effectiveness of our operations.
+            We are here help individuals and organizations unlock the full
+            potential of energy efficiency and renewable energy sources to
+            reduce their carbon footprint and save on energy costs. With over a
+            decade of experience in the industry, we are equipped with the
+            skills and expertise to design, develop, and implement customized
+            energy solutions that meet the specific needs of our clients.
           </p>
         </div>
 
