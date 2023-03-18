@@ -99,11 +99,11 @@ const Absolutes = styled.section`
   background: linear-gradient(rgba(2, 22, 33, 0.369), rgba(0, 9, 13, 0.79)),
     url(${bg}), no-repeat, center;
   width: 100vw;
+  max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 50vh;
-  width: 100vw;
 `;
 
 const Content = styled.div`
