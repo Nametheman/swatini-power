@@ -1,13 +1,21 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Models = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <LeftFrame>
         <h3>ESCO model</h3>
         <p>Find out more about financing options for private clients.</p>
-        <button>Learn More About ESCO</button>
+        <button
+          onClick={() => {
+            navigate("/esco-model");
+          }}
+        >
+          Learn More About ESCO
+        </button>
       </LeftFrame>
       <RightFrame>
         <h3>PPP model</h3>
