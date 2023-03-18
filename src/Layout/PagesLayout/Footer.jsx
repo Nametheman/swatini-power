@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BsPhoneVibrate, BsMailbox } from "react-icons/bs";
+import { BsPhoneVibrate, BsMailbox, BsWhatsapp } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -10,13 +10,17 @@ const Footer = () => {
           <div className="row">
             <h3>SWATINI</h3>
             <p>
-              11, Itelorun Cl, off Alhaji-Jimoh Street, <br /> Adeniyi-Jones,
+              11, Itelorun Close, off Alhaji-Jimoh Street, <br /> Adeniyi-Jones,
               Ikeja, Lagos.
             </p>
 
             <div className="info">
               <BsPhoneVibrate size={20} />
               <p>+234-(803)-390-7077</p>
+            </div>
+            <div className="info">
+              <BsWhatsapp size={20} />
+              <p>+234-(911)-230-1991</p>
             </div>
             <div className="info">
               <BsMailbox size={20} />
