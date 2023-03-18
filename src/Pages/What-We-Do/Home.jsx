@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import streelLightImg from "../../Assets/Images/what_we_do.jpeg";
 import Hero from "./Hero";
-import generator from "../../Assets/Images/poweful.png";
+import generator from "../../Assets/Images/generatorR.jpeg";
 import { Link } from "react-router-dom";
 import Do1 from "./Do1";
 import Do2 from "./Do2";
@@ -85,6 +85,7 @@ const Container = styled.div`
       align-items: center;
       justify-content: center;
       border-left: 1px solid rgba(14, 14, 14, 0.094);
+      padding-left: 60px;
 
       a {
         background-color: ${process.env.REACT_APP_PRIMARY_COLOR};
@@ -103,7 +104,8 @@ const Container = styled.div`
       }
 
       img {
-        width: 60%;
+        width: 450px;
+        height: 300px;
       }
     }
   }
