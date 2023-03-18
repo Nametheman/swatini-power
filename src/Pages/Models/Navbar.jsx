@@ -12,11 +12,11 @@ const Navbar = () => {
       path: "/technolgies-and-solutions",
       id: "link3",
     },
-    {
-      name: "PowerRent",
-      path: "/power-rent",
-      id: "link4",
-    },
+    // {
+    //   name: "PowerRent",
+    //   path: "/power-rent",
+    //   id: "link4",
+    // },
     {
       name: "Contact",
       path: "/contact",
