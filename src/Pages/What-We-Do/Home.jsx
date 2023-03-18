@@ -53,7 +53,7 @@ const Home = () => {
       <Do1 />
       <h3>Finance your energy retrofit</h3>
       <Do2 />
-      <h3>Reduce Reduce your carbon footprint</h3>
+      <h3>Reduce your carbon footprint</h3>
       <Do3 />
       {/* <h3>Develop your renewable energy project</h3>
       <Do4 /> */}
