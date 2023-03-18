@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import image from "../../Assets/Images/lady-data.jpeg";
+import image from "../../Assets/Images/energy.jpeg";
 
 const Do1 = () => {
   return (
@@ -28,5 +28,10 @@ const Container = styled.div`
     flex: 0.8 0 8rem;
     padding: 0 40px;
     color: rgba(14, 14, 14, 0.639);
+  }
+  img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
   }
 `;

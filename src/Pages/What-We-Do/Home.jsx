@@ -49,14 +49,14 @@ const Home = () => {
           </Link>
         </div>
       </div>
-      <h3>Reduce your energy costs</h3>
+      <h3>Lower your energy costs</h3>
       <Do1 />
-      <h3>Finance your energy renovation project</h3>
+      <h3>Finance your energy retrofit</h3>
       <Do2 />
-      <h3>Reduce CO2 emissions</h3>
+      <h3>Reduce Reduce your carbon footprint</h3>
       <Do3 />
-      <h3>Develop your renewable energy project</h3>
-      <Do4 />
+      {/* <h3>Develop your renewable energy project</h3>
+      <Do4 /> */}
       <Models />
     </Container>
   );
