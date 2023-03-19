@@ -92,9 +92,10 @@ const Contact = () => {
           <div className="mapContainer">
             <h3>Send Us a Message</h3>
             <p>
-              We are present throughout Central and South-Eastern Europe,
-              allowing us to help you improve your energy efficiency wherever
-              our services are needed.
+              If you have any questions, comments, or concerns, please do not
+              hesitate to contact us using the form provided on our website or
+              by emailing us directly at <em>business@swatinipower.com </em>. We
+              look forward to hearing from you!
             </p>
           </div>
         </div>

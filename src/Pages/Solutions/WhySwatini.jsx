@@ -6,21 +6,71 @@ const Services = () => {
 
   const services = [
     {
-      name: "Technological Neutrality",
+      name: "Expertise",
       brief:
-        "We are not dependent on any single equipment or technology provider, so that we can always make sure to offer our clients the very best available technology suited to their particular needs.",
+        "Our team has extensive experience in delivering high-quality services to clients in various industries.",
       id: "service1",
     },
     {
-      name: "Innovation",
+      name: "Personalized Approach",
       brief:
-        "Innovations are crucial to the work Resalta does. Our solutions are adapted to each individual project, always with the goal of providing the strongest possible impact on our client’s energy savings.",
+        "We work closely with each client to understand their specific needs and tailor our solutions to meet their unique requirements.",
       id: "service2",
     },
     {
-      name: "Turnkey solutions",
+      name: "Quality",
       brief:
-        "We take care of everything from A to Z. You can relax knowing that Resalta will carry out your energy renovation project without any drain on your resources, be it manpower, time or money.",
+        "We maintain rigorous quality control standards to ensure that our services meet the highest levels of excellence and precision.",
+      id: "service3",
+    },
+  ];
+
+  const services2 = [
+    {
+      name: "Flexibility",
+      brief:
+        "We are adaptable and able to respond quickly to changing circumstances and client needs, ensuring that we always deliver on time and on budget.",
+      id: "service3",
+    },
+    {
+      name: "Competitive Pricing",
+      brief:
+        "We offer competitive pricing that is transparent and fair, with no hidden costs or fees.",
+      id: "service3",
+    },
+    {
+      name: "Local Knowledge",
+      brief:
+        "We have a deep understanding of the local business environment, culture, and regulatory landscape, enabling us to provide valuable insights and guidance to our clients.",
+      id: "service3",
+    },
+  ];
+  const services3 = [
+    {
+      name: "Collaborative Approach",
+      brief:
+        "We believe in working collaboratively with our clients and partners to achieve shared goals and build long-term relationships based on trust and mutual respect.",
+      id: "service3",
+    },
+    {
+      name: "Innovative Solutions",
+      brief:
+        "We are committed to staying at the forefront of our industry, constantly exploring new technologies and approaches to provide our clients with innovative solutions that drive growth and success.",
+      id: "service3",
+    },
+    {
+      name: "Commitment to Sustainability",
+      brief:
+        "We are committed to sustainable business practices and social responsibility, striving to minimize our environmental impact and support the local community.",
+      id: "service3",
+    },
+  ];
+
+  const services4 = [
+    {
+      name: "Customer Satisfaction",
+      brief:
+        "Our top priority is the satisfaction of our clients, and we go above and beyond to ensure that they are happy with our services and the results we achieve together.",
       id: "service3",
     },
   ];
@@ -38,6 +88,39 @@ const Services = () => {
           </div>
         );
       })}
+      {services2.map((service) => {
+        // setServiceId(service.id);
+        return (
+          <div className="card choice" key={service.id}>
+            <div className="info">
+              <h3>{service.name}</h3>
+              <p>{service.brief}</p>
+            </div>
+          </div>
+        );
+      })}
+      {services3.map((service) => {
+        // setServiceId(service.id);
+        return (
+          <div className="card choice" key={service.id}>
+            <div className="info">
+              <h3>{service.name}</h3>
+              <p>{service.brief}</p>
+            </div>
+          </div>
+        );
+      })}
+      {services4.map((service) => {
+        // setServiceId(service.id);
+        return (
+          <div className="card choice center" key={service.id}>
+            <div className="info">
+              <h3>{service.name}</h3>
+              <p>{service.brief}</p>
+            </div>
+          </div>
+        );
+      })}
     </Container>
   );
 };
@@ -45,14 +128,23 @@ const Services = () => {
 export default Services;
 
 const Container = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.4rem;
   padding: 15px 20px;
 
+  /* &:nth-child(even) {
+    background-color: lightblue;
+  } */
+  /* .center {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid;
+  } */
   .card {
     flex: 1 0 18em;
     position: relative;
+    margin-bottom: 40px;
 
     .info {
       padding: 15px 40px;

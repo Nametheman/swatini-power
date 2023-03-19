@@ -17,9 +17,8 @@ const Home = () => {
         <div className="officeLocation">
           <h3>Our Office</h3>
           <p>
-            We are present throughout Central and South-Eastern Europe, allowing
-            us to help you improve your energy efficiency wherever our services
-            are needed.
+            We are currently located at 11, Itelorun Close, off Alhaji-Jimoh
+            Street, Adeniyi-Jones, Ikeja, Lagos, Nigeria.
           </p>
         </div>
         <div className="mapSection">

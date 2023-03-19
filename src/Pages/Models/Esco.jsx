@@ -16,7 +16,7 @@ const Esco = () => {
         <div className="leftFrame">
           <h4>
             Everything you should know about financing your project <br />{" "}
-            Swaitini Power's key business model – guaranteed savings with no
+            Swatini Power's key business model – guaranteed savings with no
             investment required.{" "}
           </h4>
 
