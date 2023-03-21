@@ -154,7 +154,6 @@ const Container = styled.div`
 
       h3 {
         font-size: 30px;
-        /* text-align: center; */
         font-family: "Coda", cursive;
         color: ${process.env.REACT_APP_PRIMARY_COLOR};
         letter-spacing: 1.1px;

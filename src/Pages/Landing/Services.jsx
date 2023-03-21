@@ -9,23 +9,23 @@ const Services = () => {
 
   const services = [
     {
-      name: "Public Clients",
+      name: "Commercial Solar Installation",
       brief:
-        "We collaborate with clients from the public sector on projects to lower costs, improve energy efficiency and reduce CO2 emissions. We carry out the entire project, from energy analysis, project concept, to financing, implementation and maintenance, so that our public partners take on 0 risk.",
+        "Looking to reduce your organization's environmental impact while also cutting down on electricity costs? With a commercial solar installation, you can tap into the abundant energy of the sun to minimize your carbon footprint and decrease your reliance on traditional electrical utilities. Plus, by leveraging solar power during peak demand periods, you can enjoy significant savings on your energy bills while also contributing to a more sustainable future.",
       image: service1,
       id: "service1",
     },
     {
-      name: "Commercial and business clients",
+      name: "Battery Energy Storage Solution",
       brief:
-        "We help clients save energy and lower costs so that they can focus their resources on improving the comfort and experience of their own clients and staff. We take on all the risks and costs of energy renovation projects, from energy audit, concept, to financing, implementation and maintenance.",
+        "Our energy storage solutions enable businesses to store excess energy during periods of low demand and discharge it during peak periods, resulting in significant cost savings and improved energy efficiency. By strategically managing electricity usage, businesses can take advantage of lower prices and avoid higher costs during peak periods.",
       image: service2,
       id: "service2",
     },
     {
-      name: "Industrial Clients",
+      name: "Energy Management Systems",
       brief:
-        "We provide adapted industrial solutions regardless of production sector. By taking care of every step of the project from financing to maintenance, we optimize energy production processes to ensure the highest possible savings, while allowing clients to remain focused on their core business.",
+        "We can provide energy management systems that use battery storage systems to optimize energy use and reduce costs. Our team can design customized energy management systems that meet the unique needs of the client, such as scheduling energy use during times of low electricity prices or automatically switching to battery power during peak demand periods.",
       image: service3,
       id: "service3",
     },
@@ -77,7 +77,7 @@ const Container = styled.div`
     flex-direction: column;
     align-items: flex-end; */
     position: relative;
-    height: 700px;
+    height: 800px;
 
     img {
       width: 100%;

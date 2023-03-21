@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import bg from "../../Assets/Images/open_book.avif";
+import bg from "../../Assets/Images/esco.jpeg";
 import Hero from "./Hero";
 import escoImg from "../../Assets/Images/swatini_esco.jpeg";
 
@@ -96,8 +96,10 @@ const Container = styled.div`
 `;
 
 const Absolutes = styled.section`
-  background: linear-gradient(rgba(2, 22, 33, 0.369), rgba(0, 9, 13, 0.79)),
+  background: linear-gradient(rgba(2, 22, 33, 0.969), rgba(0, 9, 13, 0.59)),
     url(${bg}), no-repeat, center;
+  /* transform: rotate(180deg); */
+
   width: 100vw;
   max-width: 1440px;
   background-repeat: no-repeat;
