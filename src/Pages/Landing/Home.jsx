@@ -16,7 +16,7 @@ const Home = () => {
       </Absolutes>
       <Hero />
 
-      <h3 className="heading">Sectors we serve</h3>
+      <h3 className="heading">Our solution</h3>
       <Services />
       <h3 className="heading">Why choose Swatini?</h3>
       <WhySwatini />

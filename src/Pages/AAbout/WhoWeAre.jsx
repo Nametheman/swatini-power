@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import service2 from "../../Assets/Images/commercial.jpeg";
+import service2 from "../../Assets/Images/who_we_are.jpeg";
 
 const WhoWeAre = () => {
   return (

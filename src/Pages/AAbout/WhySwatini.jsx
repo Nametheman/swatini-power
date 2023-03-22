@@ -4,28 +4,44 @@ import styled from "styled-components";
 const WhySwatini = () => {
   const services = [
     {
-      title: "Savings Guarantee",
-      text: "The only true measure of success of the projects we carry out are the savings our clients achieve. As a reliable partner, we at Resalta guarantee these savings to our clients, and deliver on our promises with precision and accuracy. ",
+      title: "Expertise",
+      text: "Our team has extensive experience in delivering high-quality services to clients in various industries.",
     },
     {
-      title: "Innovation",
-      text: "Innovations are crucial to the work Resalta does. Our solutions are adapted to each individual project, and we use the latest technologies and all the resources at our disposal to provide the best solutions and overcome even the greatest of challenges.",
+      title: "Personalized Approach",
+      text: "We work closely with each client to understand their specific needs and tailor our solutions to meet their unique requirements.",
     },
     {
-      title: "Technological neutrality",
-      text: "We are not dependent on any single equipment or technology producer, so that we can always provide our clients with the very best available technology suited to their particular needs.",
+      title: "Quality",
+      text: "We maintain rigorous quality control standards to ensure that our services meet the highest levels of excellence and precision.",
     },
     {
-      title: "Environmental friendliness",
-      text: "Sustainability, CO2 cuts and environmental protection are key factors in our work, as we work hard at making sure that the projects we develop and measures we implement help not only our clients but wider communities and their environment as a whole, creating clean energy that will last for decades to come.",
+      title: "Flexibility",
+      text: "We are adaptable and able to respond quickly to changing circumstances and client needs, ensuring that we always deliver on time and on budget.",
     },
     {
-      title: "Diversified expertise",
-      text: "Our team members are proven experts in a wide variety of different fields, with valuable regional experience, which allows us to offer our clients a broad range of specialized energy services.",
+      title: "Competitive Pricing",
+      text: "We offer competitive pricing that is transparent and fair, with no hidden costs or fees.",
     },
     {
-      title: "Independence",
-      text: "Resalta has strong backing and years of experience and expertise, but we maintain a flexible, responsive and agile mindset. Our independence allows us to be quick and efficient and best meet our clients’ needs in a short time frame while offering bespoke solutions.",
+      title: "Local Knowledge",
+      text: "We have a deep understanding of the local business environment, culture, and regulatory landscape, enabling us to provide valuable insights and guidance to our clients.",
+    },
+    {
+      title: "Collaborative Approach",
+      text: "We believe in working collaboratively with our clients and partners to achieve shared goals and build long-term relationships based on trust and mutual respect.",
+    },
+    {
+      title: "Innovative Solutions",
+      text: "We are committed to staying at the forefront of our industry, constantly exploring new technologies and approaches to provide our clients with innovative solutions that drive growth and success.",
+    },
+    {
+      title: "Commitment to Sustainability",
+      text: "We are committed to sustainable business practices and social responsibility, striving to minimize our environmental impact and support the local community.",
+    },
+    {
+      title: "Customer Satisfaction",
+      text: "Our top priority is the satisfaction of our clients, and we go above and beyond to ensure that they are happy with our services and the results we achieve together.",
     },
   ];
   return (

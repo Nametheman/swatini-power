@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import service1 from "../../Assets/Images/public_sector.jpeg";
+import service1 from "../../Assets/Images/commercial_solar.jpeg";
 import service2 from "../../Assets/Images/commercial.jpeg";
-import service3 from "../../Assets/Images/industrial.jpeg";
+import service3 from "../../Assets/Images/energy_mgt.jpeg";
 
 const Services = () => {
   //   const [serviceId, setServiceId] = useState();
