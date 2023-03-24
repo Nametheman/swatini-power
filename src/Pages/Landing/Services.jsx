@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import service1 from "../../Assets/Images/commercial_solar.jpeg";
-import service2 from "../../Assets/Images/commercial.jpeg";
+import service2 from "../../Assets/Images/batterystorage.jpeg";
 import service3 from "../../Assets/Images/energy_mgt.jpeg";
+import Modal from "./Modal";
 
 const Services = () => {
-  //   const [serviceId, setServiceId] = useState();
-
+  const [showModal, setShowModal] = useState(false);
+  const [serviceId, setServiceId] = useState();
   const services = [
     {
       name: "Commercial Solar Installation",
@@ -16,7 +17,7 @@ const Services = () => {
       id: "service1",
     },
     {
-      name: "Battery Energy Storage Solution",
+      name: "Battery Energy Storage",
       brief:
         "Our energy storage solutions enable businesses to store excess energy during periods of low demand and discharge it during peak periods, resulting in significant cost savings and improved energy efficiency. By strategically managing electricity usage, businesses can take advantage of lower prices and avoid higher costs during peak periods.",
       image: service2,
@@ -34,7 +35,6 @@ const Services = () => {
   return (
     <Container>
       {services.map((service) => {
-        // setServiceId(service.id);
         return (
           <div className="card" key={service.id}>
             <img src={service.image} alt="" />
@@ -45,7 +45,8 @@ const Services = () => {
               <a
                 className="btn"
                 onClick={() => {
-                  alert(service.id);
+                  setShowModal(true);
+                  setServiceId(service.id);
                 }}
               >
                 Learn More
@@ -54,6 +55,9 @@ const Services = () => {
           </div>
         );
       })}
+      {showModal && (
+        <Modal id={serviceId} isShow={setShowModal} show={showModal} />
+      )}
     </Container>
   );
 };
@@ -68,14 +72,7 @@ const Container = styled.div`
 
   .card {
     background-color: #f1f2f2;
-    /* padding: 15px 20px; */
-    /* box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.39);
-    -webkit-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.39);
-    -moz-box-shadow: 0px 0px 14px -1px rgba(0, 0, 0, 0.39); */
     flex: 1 0 18em;
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-end; */
     position: relative;
     height: 800px;
 
@@ -88,7 +85,6 @@ const Container = styled.div`
       padding: 15px 40px;
       display: flex;
       flex-direction: column;
-      /* align-items: flex-end; */
       justify-content: space-between;
 
       h3 {
@@ -109,7 +105,6 @@ const Container = styled.div`
         background-color: ${process.env.REACT_APP_SECONDARY_COLOR};
         color: #fff;
         border: none;
-        /* width: 100%; */
         text-align: center;
         font-weight: 600;
         letter-spacing: 1.1px;
@@ -119,7 +114,6 @@ const Container = styled.div`
         margin: 10px 0;
         transition: 0.2s ease-in-out;
         align-self: flex-start;
-        /* margin-top: auto; */
         position: absolute;
         bottom: 2rem;
         left: 2rem;

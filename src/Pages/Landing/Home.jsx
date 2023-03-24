@@ -18,7 +18,7 @@ const Home = () => {
 
       <h3 className="heading">Our solution</h3>
       <Services />
-      <h3 className="heading">Why choose Swatini?</h3>
+      <h3 className="heading">Our Process</h3>
       <WhySwatini />
 
       <div className="learnMore">
