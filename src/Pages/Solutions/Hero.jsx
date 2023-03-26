@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <Container>
       <div className="content">
-        <h2>Technologies & Solutions</h2>
+        <h2>Industries & Solutions</h2>
       </div>
     </Container>
   );

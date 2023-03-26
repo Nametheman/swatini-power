@@ -12,32 +12,32 @@ const Industries = () => {
   const [isFlipped4, setIsFlipped4] = useState(false);
   const industries = [
     {
-      name: "Hospital",
+      name: "Hospitals",
       id: "i1",
       icon: <FaHospitalAlt />,
       details:
-        "Solar panels are designed to harness the energy from the sun's rays and convert it into usable electricity through a process known as the photovoltaic effect. The basic structure of a solar panel consists of two semiconductor layers - the top thin layer and the bottom thick layer.",
+        "Hospitals can benefit from reduced energy costs, improved energy efficiency, and lower maintenance and repair costs. Solar energy can also help the hospital reduce its carbon footprint and achieve sustainability goal. Overall, solar power generation can provide a cost-effective energy solution to large hospitals looking to manage their energy needs and achieve energy efficiency goals.",
     },
     {
       name: "Universities",
       id: "i2",
       icon: <FaUniversity />,
       details:
-        "When sunlight hits the top layer of the solar panel, it knocks electrons loose from the atoms in the material. These free electrons flow towards the bottom layer of the panel, which is positively charged, creating a flow of electricity. The top layer of the panel is made up of photovoltaic cells, which are made of materials such as silicon, that are able to absorb and convert sunlight into electricity.",
+        "Universities have large energy demands due to their size and the number of students, faculty, and staff. Solar power can help universities reduce their energy costs by providing access to renewable energy sources and energy-efficient technologies. This can lead to significant cost savings over time",
     },
     {
-      name: "Retail",
+      name: "Retails",
       id: "i3",
       icon: <FaCartArrowDown />,
       details:
-        "Utilizing solar energy during daytime can power machinery and equipment, reducing operating costs and increasing production efficiency. This renewable energy source is abundant and can be harnessed effectively. Take advantage of it to improve your business sustainability.",
+        "By going solar, retails can reduce their energy bills, generate additional revenue through government incentives, enhance their reputation as eco-friendly businesses, and future-proof their operations against rising energy costs while contributing to a cleaner, more sustainable future.",
     },
     {
       name: "Apartments",
       id: "i4",
       icon: <GiFamilyHouse />,
       details:
-        "Solar energy is an untapped, abundant and clean renewable resource. It can be used to power machinery, heat water and can lead to significant monthly cost savings. Take advantage of this natural resource to increase sustainability and financial benefits.",
+        "Apartments can install solar panels on their rooftops to generate electricity from the sun. This can help offset the energy consumption of common areas such as hallways, elevators, and lighting. Rooftop solar can also be used to power individual units, depending on the design and size of the solar installation.",
     },
   ];
   return (
@@ -179,7 +179,7 @@ const Card = styled.div`
     }
   }
   h3 {
-    color: aliceblue;
+    color: #15a2f4;
     font-family: "Coda", cursive;
     margin-top: 10px;
     font-size: 40px;
@@ -192,7 +192,7 @@ const Card = styled.div`
   }
   p {
     font-size: 14px;
-    color: aliceblue;
+    color: #15a2f4;
   }
 `;
 const Card2 = styled.div`

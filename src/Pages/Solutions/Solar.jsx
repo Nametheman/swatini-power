@@ -29,6 +29,7 @@ const Solar = () => {
               energy users.
             </li>
             <li>✅ Take your business off the grid today.</li>
+            <li>✅ Come to Swatini, We Design. We Build. We Finance.</li>
           </ul>
         </div>
       </div>
@@ -72,6 +73,9 @@ const Container = styled.div`
       ul {
         list-style: none;
         font-family: "Coda", cursive;
+        li {
+          margin-bottom: 10px;
+        }
       }
     }
   }

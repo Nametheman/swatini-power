@@ -8,7 +8,7 @@ const Navbar = () => {
     { name: "About Us", path: "/about", id: "link1" },
     { name: "What we do", path: "/what-we-do", id: "link2" },
     {
-      name: "Technologies & Solutions",
+      name: "Industries & Solutions",
       path: "/technolgies-and-solutions",
       id: "link3",
     },

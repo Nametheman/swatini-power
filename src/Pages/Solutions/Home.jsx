@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import streelLightImg from "../../Assets/Images/solutionsabanner.jpeg";
+import streelLightImg from "../../Assets/Images/tech.jpeg";
 import WhySwatini from "./WhySwatini";
 import Hero from "./Hero";
 import Navbar from "./Navbar";

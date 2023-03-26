@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import processImg1 from "../../Assets/Images/analyze.jpeg";
+import processImg1 from "../../Assets/Images/sunlight.jpeg";
 import processImg2 from "../../Assets/Images/projectdesign.jpeg";
 import processImg3 from "../../Assets/Images/distributemonitor.jpeg";
 import processImg4 from "../../Assets/Images/procurement.jpeg";
@@ -11,30 +11,30 @@ const Services = () => {
   const services = [
     {
       image: processImg1,
-      name: "Auditing Utility Data",
+      name: "Capture The Sunlight",
       brief:
-        "Auditing your utility data involves analyzing your energy usage and costs over a specific period of time to identify areas where you can reduce your energy consumption and save money on your utility bills. This process involves collecting and analyzing data from your utility bills, as well as monitoring your energy usage patterns using smart meters or other monitoring tools.",
+        "Solar panels are designed to harness the energy from the sun's rays and convert it into usable electricity through a process known as the photovoltaic effect. The basic structure of a solar panel consists of two semiconductor layers - the top thin layer and the bottom thick layer.",
       id: "service1",
     },
     {
       image: processImg2,
-      name: "Project Design and Approval",
+      name: "Convert The Power",
       brief:
-        "Our project design and approval involves the process of planning and creating a project, as well as obtaining the necessary approvals and permits from regulatory agencies and stakeholders. This process typically involves several steps, including identifying the goals and objectives of the project, defining the scope and timeline, developing a budget, and creating detailed project plans and specifications.",
+        "When sunlight hits the top layer of the solar panel, it knocks electrons loose from the atoms in the material. These free electrons flow towards the bottom layer of the panel, which is positively charged, creating a flow of electricity. The top layer of the panel is made up of photovoltaic cells, which are made of materials such as silicon, that are able to absorb and convert sunlight into electricity.",
       id: "service2",
     },
     {
       image: processImg4,
-      name: "Procurement and Installation",
+      name: "Distribute The Power",
       brief:
-        "During the procurement process, Swatini project managers work with vendors or suppliers to identify the best options for the project, considering factors such as quality, cost, and availability. They then negotiate contracts and pricing to ensure that the project stays within budget. Once the equipment and materials are procured, the installation process begins. This involves coordinating with contractors, scheduling installation timelines, and ensuring that all necessary permits and approvals are in place.",
+        "Utilizing solar energy during daytime can power machinery and equipment, reducing operating costs and increasing production efficiency. This renewable energy source is abundant and can be harnessed effectively. Take advantage of it to improve your business sustainability.",
       id: "service3",
     },
     {
       image: processImg3,
-      name: "Distribute and Monitor Power",
+      name: "Go Solar And Cut Cost",
       brief:
-        "With Swatini, the process of distributing and monitoring power is critical to ensuring that our commercial clients have access to reliable and affordable electricity. By investing in advanced monitoring and distribution systems, businesses can improve the efficiency and reliability of their on-site generated power while also reducing the environmental sustainability of their businesses with regards to climate change.",
+        "Solar energy is an untapped, abundant and clean renewable resource. It can be used to power machinery, heat water and can lead to significant monthly cost savings. Take advantage of this natural resource to increase sustainability and financial benefits.",
       id: "service3",
     },
   ];
