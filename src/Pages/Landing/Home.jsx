@@ -23,7 +23,7 @@ const Home = () => {
 
       <div className="learnMore">
         <FaCaretRight />
-        <Link to="/about">Learn More</Link>
+        <Link to="/technolgies-and-solutions">Learn More</Link>
       </div>
     </Container>
   );

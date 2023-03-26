@@ -1,120 +1,53 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import processImg1 from "../../Assets/Images/analyze.jpeg";
+import processImg2 from "../../Assets/Images/projectdesign.jpeg";
+import processImg3 from "../../Assets/Images/distributemonitor.jpeg";
+import processImg4 from "../../Assets/Images/procurement.jpeg";
 
 const Services = () => {
   //   const [serviceId, setServiceId] = useState();
 
   const services = [
     {
-      name: "Expertise",
+      image: processImg1,
+      name: "Auditing Utility Data",
       brief:
-        "Our team has extensive experience in delivering high-quality services to clients in various industries.",
+        "Auditing your utility data involves analyzing your energy usage and costs over a specific period of time to identify areas where you can reduce your energy consumption and save money on your utility bills. This process involves collecting and analyzing data from your utility bills, as well as monitoring your energy usage patterns using smart meters or other monitoring tools.",
       id: "service1",
     },
     {
-      name: "Personalized Approach",
+      image: processImg2,
+      name: "Project Design and Approval",
       brief:
-        "We work closely with each client to understand their specific needs and tailor our solutions to meet their unique requirements.",
+        "Our project design and approval involves the process of planning and creating a project, as well as obtaining the necessary approvals and permits from regulatory agencies and stakeholders. This process typically involves several steps, including identifying the goals and objectives of the project, defining the scope and timeline, developing a budget, and creating detailed project plans and specifications.",
       id: "service2",
     },
     {
-      name: "Quality",
+      image: processImg4,
+      name: "Procurement and Installation",
       brief:
-        "We maintain rigorous quality control standards to ensure that our services meet the highest levels of excellence and precision.",
-      id: "service3",
-    },
-  ];
-
-  const services2 = [
-    {
-      name: "Flexibility",
-      brief:
-        "We are adaptable and able to respond quickly to changing circumstances and client needs, ensuring that we always deliver on time and on budget.",
+        "During the procurement process, Swatini project managers work with vendors or suppliers to identify the best options for the project, considering factors such as quality, cost, and availability. They then negotiate contracts and pricing to ensure that the project stays within budget. Once the equipment and materials are procured, the installation process begins. This involves coordinating with contractors, scheduling installation timelines, and ensuring that all necessary permits and approvals are in place.",
       id: "service3",
     },
     {
-      name: "Competitive Pricing",
+      image: processImg3,
+      name: "Distribute and Monitor Power",
       brief:
-        "We offer competitive pricing that is transparent and fair, with no hidden costs or fees.",
-      id: "service3",
-    },
-    {
-      name: "Local Knowledge",
-      brief:
-        "We have a deep understanding of the local business environment, culture, and regulatory landscape, enabling us to provide valuable insights and guidance to our clients.",
-      id: "service3",
-    },
-  ];
-  const services3 = [
-    {
-      name: "Collaborative Approach",
-      brief:
-        "We believe in working collaboratively with our clients and partners to achieve shared goals and build long-term relationships based on trust and mutual respect.",
-      id: "service3",
-    },
-    {
-      name: "Innovative Solutions",
-      brief:
-        "We are committed to staying at the forefront of our industry, constantly exploring new technologies and approaches to provide our clients with innovative solutions that drive growth and success.",
-      id: "service3",
-    },
-    {
-      name: "Commitment to Sustainability",
-      brief:
-        "We are committed to sustainable business practices and social responsibility, striving to minimize our environmental impact and support the local community.",
-      id: "service3",
-    },
-  ];
-
-  const services4 = [
-    {
-      name: "Customer Satisfaction",
-      brief:
-        "Our top priority is the satisfaction of our clients, and we go above and beyond to ensure that they are happy with our services and the results we achieve together.",
+        "With Swatini, the process of distributing and monitoring power is critical to ensuring that our commercial clients have access to reliable and affordable electricity. By investing in advanced monitoring and distribution systems, businesses can improve the efficiency and reliability of their on-site generated power while also reducing the environmental sustainability of their businesses with regards to climate change.",
       id: "service3",
     },
   ];
 
   return (
     <Container>
-      {services.map((service) => {
+      {services.map((service, idx) => {
         // setServiceId(service.id);
         return (
           <div className="card choice" key={service.id}>
             <div className="info">
-              <h3>{service.name}</h3>
-              <p>{service.brief}</p>
-            </div>
-          </div>
-        );
-      })}
-      {services2.map((service) => {
-        // setServiceId(service.id);
-        return (
-          <div className="card choice" key={service.id}>
-            <div className="info">
-              <h3>{service.name}</h3>
-              <p>{service.brief}</p>
-            </div>
-          </div>
-        );
-      })}
-      {services3.map((service) => {
-        // setServiceId(service.id);
-        return (
-          <div className="card choice" key={service.id}>
-            <div className="info">
-              <h3>{service.name}</h3>
-              <p>{service.brief}</p>
-            </div>
-          </div>
-        );
-      })}
-      {services4.map((service) => {
-        // setServiceId(service.id);
-        return (
-          <div className="card choice center" key={service.id}>
-            <div className="info">
+              <img src={service.image} alt="" />
+              <div className="number">{idx + 1}</div>
               <h3>{service.name}</h3>
               <p>{service.brief}</p>
             </div>
@@ -128,23 +61,14 @@ const Services = () => {
 export default Services;
 
 const Container = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.4rem;
   padding: 15px 20px;
 
-  /* &:nth-child(even) {
-    background-color: lightblue;
-  } */
-  /* .center {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid;
-  } */
   .card {
     flex: 1 0 18em;
     position: relative;
-    margin-bottom: 40px;
 
     .info {
       padding: 15px 40px;
@@ -152,12 +76,31 @@ const Container = styled.div`
       flex-direction: column;
       justify-content: space-between;
 
+      img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 20px;
+        border-radius: 12px;
+      }
+      .number {
+        background-color: #686868;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin: 20px 0;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 50%;
+        font-family: "Hanalei", cursive;
+        font-size: 33px;
+      }
       h3 {
-        font-size: 30px;
+        font-size: 20px;
+        /* text-align: center; */
         font-family: "Coda", cursive;
         color: ${process.env.REACT_APP_PRIMARY_COLOR};
         letter-spacing: 1.1px;
-        text-align: center;
       }
       p {
         margin: 30px 0 50px;
@@ -199,7 +142,7 @@ const Container = styled.div`
     }
   }
 
-  .choice:not(:last-child) {
+  /* .choice:not(:last-child) {
     border-right: 1.8px solid #f1f0f0;
-  }
+  } */
 `;

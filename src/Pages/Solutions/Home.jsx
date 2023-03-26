@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import streelLightImg from "../../Assets/Images/technology2.jpeg";
+import streelLightImg from "../../Assets/Images/solutionsabanner.jpeg";
+import WhySwatini from "./WhySwatini";
 import Hero from "./Hero";
 import Navbar from "./Navbar";
-import WhySwatini from "./WhySwatini";
+import Industries from "./Industries";
+import Solar from "./Solar";
 
 const Home = () => {
   return (
@@ -12,11 +14,9 @@ const Home = () => {
         <Navbar />
       </Absolutes>
       <Hero />
-
-      <Content>
-        <h3 className="mainHead">Why Choose Swatini?</h3>
-      </Content>
       <WhySwatini />
+      <Industries />
+      <Solar />
     </Container>
   );
 };
@@ -32,6 +32,7 @@ const Absolutes = styled.section`
   height: 50vh;
   width: 100vw;
   max-width: 1440px;
+  /* max-height: 800px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
