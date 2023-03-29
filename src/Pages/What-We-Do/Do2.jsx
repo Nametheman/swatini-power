@@ -36,6 +36,7 @@ const Container = styled.div`
     color: rgba(14, 14, 14, 0.639);
     @media screen and (max-width: 480px) {
       font-size: 15px;
+      padding: 0 20px;
     }
   }
 

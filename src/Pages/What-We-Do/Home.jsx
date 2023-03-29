@@ -114,7 +114,7 @@ const Container = styled.div`
         @media screen and (max-width: 480px) {
           margin-top: 20px;
           width: 80%;
-          font-size: 13px;
+          font-size: 10px;
           padding: 14px 40px;
           /* height: 200px; */
           /* border-radius: 10px; */
