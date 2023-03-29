@@ -143,13 +143,17 @@ const Container = styled.div`
     font-family: "Coda", cursive;
     font-size: 40px;
     margin-top: 90px;
+
+    @media screen and (max-width: 480px) {
+      font-size: 20px;
+    }
   }
 `;
 
 const Absolutes = styled.section`
   background: linear-gradient(rgba(14, 14, 14, 0.511), rgba(0, 9, 13, 0.65)),
     url(${streelLightImg}), no-repeat, center;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   max-width: 1440px;
   background-repeat: no-repeat;

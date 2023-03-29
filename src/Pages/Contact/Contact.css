@@ -238,7 +238,7 @@ span a {
 }
 @media screen and (max-width: 680px) {
   .contact-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     padding: 0;
   }

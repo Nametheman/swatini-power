@@ -29,7 +29,7 @@ const Container = styled.div`
 const Absolutes = styled.section`
   background: linear-gradient(rgba(14, 14, 14, 0.511), rgba(0, 9, 13, 0.65)),
     url(${streelLightImg}), no-repeat, center;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   max-width: 1440px;
   /* max-height: 800px; */

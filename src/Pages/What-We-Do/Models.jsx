@@ -64,6 +64,9 @@ const RightFrame = styled.div`
   flex: 1;
   text-align: center;
   padding: 0 0 80px;
+  @media screen and (max-width: 480px) {
+    display: none; /* padding: 30px; */
+  }
 
   button {
     text-transform: uppercase;

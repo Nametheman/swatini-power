@@ -34,13 +34,16 @@ const Container = styled.div`
     flex: 0.8 0 8rem;
     padding: 0 40px;
     color: rgba(14, 14, 14, 0.639);
+    @media screen and (max-width: 480px) {
+      font-size: 15px;
+    }
   }
   img {
     width: 400px;
     height: 300px;
     object-fit: cover;
     @media screen and (max-width: 480px) {
-      width: 300px;
+      width: 90%;
       height: 200px;
       object-fit: cover;
       margin-top: 20px;

@@ -32,7 +32,7 @@ const Container = styled.div`
     font-family: "Coda", cursive;
 
     @media screen and (max-width: 480px) {
-      margin-top: 50%;
+      margin-top: 30%;
 
       h2 {
         font-size: 30px;
