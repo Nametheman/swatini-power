@@ -4,7 +4,7 @@ import image from "../../Assets/Images/energy.jpeg";
 
 const Do1 = () => {
   return (
-    <Container>
+    <Container data-aos="zoom-in-down">
       <p>
         Our goal is to identify, finance and implement the right solutions that
         will allow our clients to minimize their energy costs, optimize their
@@ -24,6 +24,12 @@ const Container = styled.div`
   padding: 40px 100px;
   flex-wrap: wrap;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
+
   p {
     flex: 0.8 0 8rem;
     padding: 0 40px;
@@ -33,5 +39,12 @@ const Container = styled.div`
     width: 400px;
     height: 300px;
     object-fit: cover;
+    @media screen and (max-width: 480px) {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
   }
 `;

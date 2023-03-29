@@ -18,7 +18,12 @@ const Home = () => {
         <Navbar />
       </Absolutes>
       <Hero />
-      <div className="content1">
+      <div
+        className="content1"
+        data-aos="zoom-in-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <p>
           At Swatini Power Ltd, we solve the energy problems of our clients. We
           offer Energy-as-a-Service (EaaS) solutions for our commercial and
@@ -50,11 +55,11 @@ const Home = () => {
         </div>
       </div>
       <h3>Lower your energy costs</h3>
-      <Do1 />
+      <Do1 data-aos="zoom-in-down" />
       <h3>Finance your energy retrofit</h3>
-      <Do2 />
+      <Do2 data-aos="zoom-in-down" />
       <h3>Reduce your carbon footprint</h3>
-      <Do3 />
+      <Do3 data-aos="zoom-in-down" />
       {/* <h3>Develop your renewable energy project</h3>
       <Do4 /> */}
       <Models />
@@ -72,6 +77,11 @@ const Container = styled.div`
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      padding: 30px;
+    }
+
     p {
       flex: 1 0 5rem;
       padding: 0 40px;
@@ -86,6 +96,9 @@ const Container = styled.div`
       justify-content: center;
       border-left: 1px solid rgba(14, 14, 14, 0.094);
       padding-left: 60px;
+      @media screen and (max-width: 480px) {
+        padding-left: 0;
+      }
 
       a {
         background-color: ${process.env.REACT_APP_PRIMARY_COLOR};
@@ -98,6 +111,14 @@ const Container = styled.div`
         transition: all 0.2s ease-in;
         border-radius: 4px;
 
+        @media screen and (max-width: 480px) {
+          margin-top: 20px;
+          width: 80%;
+          font-size: 13px;
+          padding: 14px 40px;
+          /* height: 200px; */
+          /* border-radius: 10px; */
+        }
         &:hover {
           background-color: ${process.env.REACT_APP_SECONDARY_COLOR};
         }
@@ -106,6 +127,13 @@ const Container = styled.div`
       img {
         width: 450px;
         height: 300px;
+
+        @media screen and (max-width: 480px) {
+          margin-top: 20px;
+          width: 80%;
+          height: 200px;
+          border-radius: 10px;
+        }
       }
     }
   }

@@ -26,6 +26,10 @@ const Container = styled.div`
     color: #fff;
     font-family: "Coda", cursive;
 
+    @media screen and (max-width: 480px) {
+      margin-top: 39%;
+    }
+
     h2 {
       font-size: 40px;
       letter-spacing: 1.9px;

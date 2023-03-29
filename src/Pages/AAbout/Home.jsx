@@ -63,16 +63,29 @@ const Content = styled.div`
     font-family: "Coda", cursive;
     font-size: 35px;
     margin: 70px 140px 30px;
+    @media screen and (max-width: 480px) {
+      font-size: 25px;
+      text-align: center;
+    }
   }
   .mission {
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     padding: 0 140px;
+    @media screen and (max-width: 480px) {
+      flex-direction: column;
+      padding: 30px;
+      gap: 20px;
+    }
 
     p {
       color: #000000c3;
       flex: 1 0 20rem;
+      @media screen and (max-width: 480px) {
+        flex: 1 0 10rem;
+        font-size: 13px;
+      }
     }
   }
 `;

@@ -30,7 +30,12 @@ const WhoWeAre = () => {
         </p>
       </div>
       <div className="flexContent">
-        <img src={service2} alt="" />
+        <img
+          src={service2}
+          alt=""
+          data-aos="zoom-in-down"
+          data-aos-easing="ease-in-sine"
+        />
       </div>
     </Container>
   );
@@ -45,6 +50,10 @@ const Container = styled.div`
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    padding: 30px;
+    flex-direction: column;
+  }
 
   .flexContent {
     flex: 1 0 20rem;
@@ -53,12 +62,18 @@ const Container = styled.div`
       margin-bottom: 30px;
       font-size: 35px;
       font-family: "Coda", cursive;
+      @media screen and (max-width: 480px) {
+        font-size: 25px;
+      }
     }
 
     p {
       color: #000000c3;
       letter-spacing: 1.02px;
       margin-bottom: 10px;
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
     }
     img {
       width: 100%;

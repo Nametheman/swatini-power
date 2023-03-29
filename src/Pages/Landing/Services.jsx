@@ -4,8 +4,10 @@ import service1 from "../../Assets/Images/commercial_solar.jpeg";
 import service2 from "../../Assets/Images/batterystorage.jpeg";
 import service3 from "../../Assets/Images/energy_mgt.jpeg";
 import Modal from "./Modal";
+import AOS from "aos";
 
 const Services = () => {
+  AOS.init();
   const [showModal, setShowModal] = useState(false);
   const [serviceId, setServiceId] = useState();
   const services = [
@@ -36,7 +38,13 @@ const Services = () => {
     <Container>
       {services.map((service) => {
         return (
-          <div className="card" key={service.id}>
+          <div
+            className="card"
+            key={service.id}
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+          >
             <img src={service.image} alt="" />
 
             <div className="info">
@@ -75,10 +83,17 @@ const Container = styled.div`
     flex: 1 0 18em;
     position: relative;
     height: 800px;
+    @media screen and (max-width: 1260px) {
+      flex: 1 0 13em;
+      height: 740px;
+    }
 
     img {
       width: 100%;
       height: 270px;
+      @media screen and (max-width: 1260px) {
+        height: 200px;
+      }
     }
 
     .info {
@@ -92,11 +107,19 @@ const Container = styled.div`
         font-family: "Coda", cursive;
         color: #202020;
         letter-spacing: 1.1px;
+
+        @media screen and (max-width: 1260px) {
+          font-size: 26px;
+        }
       }
       p {
         margin: 30px 0 50px;
         color: #686868;
         letter-spacing: 1.1px;
+
+        @media screen and (max-width: 1260px) {
+          font-size: 14px;
+        }
       }
       .btn {
         padding: 12px 30px;

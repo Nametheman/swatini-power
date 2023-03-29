@@ -44,7 +44,13 @@ const Services = () => {
       {services.map((service, idx) => {
         // setServiceId(service.id);
         return (
-          <div className="card choice" key={service.id}>
+          <div
+            className="card choice"
+            key={service.id}
+            data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+            data-aos-easing="ease-in-sine"
+
+          >
             <div className="info">
               <img src={service.image} alt="" />
               <div className="number">{idx + 1}</div>
@@ -66,9 +72,21 @@ const Container = styled.div`
   gap: 1.4rem;
   padding: 15px 20px;
 
+  @media screen and (max-width: 1260px) {
+    /* max-width: 900px; */
+    margin: 0 auto;
+    /* justify-content: center; */
+  }
+
   .card {
     flex: 1 0 18em;
     position: relative;
+
+    @media screen and (max-width: 1260px) {
+      flex: 1 0 14.5em;
+      /* margin: 0 auto; */
+      /* justify-content: center; */
+    }
 
     .info {
       padding: 15px 40px;
@@ -81,6 +99,10 @@ const Container = styled.div`
         height: 180px;
         margin-bottom: 20px;
         border-radius: 12px;
+
+        @media screen and (max-width: 1260px) {
+          height: 140px;
+        }
       }
       .number {
         background-color: #686868;
@@ -96,8 +118,10 @@ const Container = styled.div`
         font-size: 33px;
       }
       h3 {
+        @media screen and (max-width: 1260px) {
+          font-size: 17px;
+        }
         font-size: 20px;
-        /* text-align: center; */
         font-family: "Coda", cursive;
         color: ${process.env.REACT_APP_PRIMARY_COLOR};
         letter-spacing: 1.1px;
@@ -106,8 +130,10 @@ const Container = styled.div`
         margin: 30px 0 50px;
         color: #686868;
         font-size: 14px;
-        /* text-align: center; */
         letter-spacing: 1.1px;
+        @media screen and (max-width: 1260px) {
+          font-size: 13px;
+        }
       }
       .btn {
         padding: 12px 30px;

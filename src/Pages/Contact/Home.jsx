@@ -56,8 +56,16 @@ const First = styled.div`
   justify-content: space-between;
   padding: 10px 20px;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
   .officeLocation {
     padding-left: 120px;
+    @media screen and (max-width: 480px) {
+      padding-left: 0;
+    }
     h3 {
       font-family: "Coda", cursive;
       font-size: 40px;
@@ -78,6 +86,11 @@ const First = styled.div`
       height: 400px;
       border: none;
       background: transparent;
+
+      @media screen and (max-width: 480px) {
+        width: 98%;
+        height: 300px;
+      }
     }
   }
 `;

@@ -50,7 +50,7 @@ const WhySwatini = () => {
       <Content>
         {services.map((service) => {
           return (
-            <div className="grid-item">
+            <div className="grid-item" data-aos="zoom-in-up">
               <h3>{service.title}</h3>
               <p>{service.text}</p>
             </div>
@@ -76,8 +76,13 @@ const Content = styled.div`
   padding: 0 140px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+
   width: 100%;
   gap: 100px;
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
   /* justify-content: space-between; */
 
   .grid-item {

@@ -8,15 +8,19 @@ import service3 from "../../Assets/Images/energy_mgt.jpeg";
 
 const Modal = ({ isShow, show, id }) => {
   return ReactDOM.createPortal(
-    <Container>
+    <Container
+      onClick={() => {
+        isShow(false);
+      }}
+    >
       <ModalContainer>
-        <CloseButton
+        {/* <CloseButton
           onClick={() => {
             isShow(false);
           }}
         >
           <GrFormClose />
-        </CloseButton>
+        </CloseButton> */}
         {id === "service1" ? (
           <div className="Head">
             <h3>Commercial Solar Installation</h3>
@@ -131,7 +135,7 @@ const ModalContainer = styled.div`
   width: 80%;
   height: 70%;
   max-height: 85%;
-  /* overflow: scroll; */
+  overflow: scroll;
   border-radius: 10px;
 
   .Head {
@@ -143,24 +147,42 @@ const ModalContainer = styled.div`
     }
     .content1 {
       display: flex;
+      max-height: 85%;
+
+      @media screen and (max-width: 480px) {
+        flex-direction: column;
+      }
       img {
         width: 500px;
         height: 380px;
         border-radius: 10px;
+        @media screen and (max-width: 480px) {
+          width: 300px;
+          height: 200px;
+        }
       }
       p {
+        @media screen and (max-width: 480px) {
+          font-size: 13px;
+          margin-top: 30px;
+        }
         flex: 1;
         padding: 8px 20px;
       }
     }
   }
 `;
-const CloseButton = styled.div`
-  position: absolute;
-  right: -20px;
-  top: -30px;
-  padding: 10px;
-  background-color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-`;
+// const CloseButton = styled.div`
+//   position: absolute;
+//   right: -20px;
+//   top: -30px;
+//   padding: 10px;
+//   background-color: #fff;
+//   border-radius: 5px;
+//   z-index: 200303030303030033003;
+//   cursor: pointer;
+//   @media screen and (max-width: 480px) {
+//     right: -5px;
+//     top: -5px;
+//   }
+// `;

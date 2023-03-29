@@ -244,6 +244,7 @@ span a {
   }
   .contact-form form {
     align-items: center;
+    margin-right: 0;
   }
   .contact-form h2 {
     text-align: center;
@@ -266,6 +267,23 @@ span a {
   }
   .social-details {
     margin-bottom: 20px;
+  }
+  .mapContainer h3 {
+    font-family: "Coda", cursive;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 0;
+    font-size: 40px;
+  }
+  .mapContainer p {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 30px;
+    padding: 0 20px;
+    margin-bottom: 30px;
+    /* padding: 0; */
+    color: #3a3a3a;
   }
 }
 /* @media only screen and (max-width: 350px) {

@@ -7,8 +7,10 @@ import Services from "./Services";
 import WhySwatini from "./WhySwatini";
 import { FaCaretRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import AOS from "aos";
 
 const Home = () => {
+  AOS.init();
   return (
     <Container>
       <Absolutes className="absolutes">
@@ -17,7 +19,13 @@ const Home = () => {
       <Hero />
 
       <h3 className="heading">Our solution</h3>
-      <Services />
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
+        <Services />
+      </div>
       <h3 className="heading">Our Process</h3>
       <WhySwatini />
 

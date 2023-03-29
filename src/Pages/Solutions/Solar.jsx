@@ -53,11 +53,23 @@ const Container = styled.div`
     align-items: center;
     height: 100%;
     padding-right: 70px;
+    position: relative;
+
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+    }
     .card {
       background-color: #fff;
       width: 550px;
       padding: 40px;
       border-radius: 3px;
+      @media screen and (max-width: 480px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+      }
       /* margin-top: 50px; */
 
       h3 {

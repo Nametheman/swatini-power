@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <Container>
-      <div className="content">
+      <div
+        className="content"
+        data-aos="zoom-in-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <h2>About Us</h2>
       </div>
     </Container>
@@ -26,12 +31,19 @@ const Container = styled.div`
     color: #fff;
     font-family: "Coda", cursive;
 
+    @media screen and (max-width: 480px) {
+      margin-top: 50%;
+    }
+
     h2 {
       font-size: 60px;
       letter-spacing: 1.9px;
       line-height: 1.1;
       /* font-weight: bold; */
       transform: scaleY(1.1);
+      @media screen and (max-width: 480px) {
+        font-size: 40px;
+      }
     }
 
     p {

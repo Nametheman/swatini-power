@@ -33,6 +33,11 @@ const Container = styled.div`
   width: 100%;
   justify-content: space-between;
   gap: 10px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    /* padding: 30px; */
+  }
 `;
 
 const LeftFrame = styled.div`

@@ -114,6 +114,11 @@ const Content = styled.div`
   display: flex;
   gap: 70px;
 
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 40px;
+  }
+
   .leftFrame {
     flex: 1 0 31rem;
 
@@ -134,11 +139,17 @@ const Content = styled.div`
       font-family: "Coda", cursive;
       letter-spacing: 1.3px;
       line-height: 1.4;
+      @media screen and (max-width: 480px) {
+        font-size: 14px;
+      }
     }
     p {
       margin-top: 30px;
       font-size: 15px;
       color: #4f4f4f;
+      @media screen and (max-width: 480px) {
+        font-size: 13px;
+      }
     }
   }
 
@@ -158,6 +169,9 @@ const Content = styled.div`
       }
     }
     p {
+      @media screen and (max-width: 480px) {
+        font-size: 13px;
+      }
       font-size: 15px;
       color: #4f4f4f;
     }

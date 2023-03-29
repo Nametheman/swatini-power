@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <Container>
-      <div className="content">
+      <div
+        className="content"
+        data-aos="zoom-in-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <h2>
           Optimizing Energy <br /> Efficiency
         </h2>
@@ -30,6 +35,10 @@ const Container = styled.div`
   z-index: 1;
   top: 0;
 
+  @media screen and (max-width: 480px) {
+    top: 80px;
+  }
+
   .content {
     width: 100vw;
     padding: 0 10%;
@@ -43,6 +52,10 @@ const Container = styled.div`
       line-height: 1.1;
       /* font-weight: bold; */
       transform: scaleY(1.1);
+      @media screen and (max-width: 1260px) {
+        font-size: 50px;
+        margin-top: 30px;
+      }
     }
 
     p {
@@ -65,6 +78,9 @@ const Container = styled.div`
         letter-spacing: 1.2px;
         transition: all 0.3s ease-in-out;
         border-radius: 6px;
+        @media screen and (max-width: 1260px) {
+          font-size: 15px;
+        }
 
         &:hover {
           background-color: ${process.env.REACT_APP_PRIMARY_COLOR};

@@ -49,6 +49,9 @@ const Navbar = () => {
     z-index: 2;
     background-color: ${changeNav ? "#fff" : ""};
     transition: all 0.3s ease-in-out;
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
 
     .logo-section {
       a {

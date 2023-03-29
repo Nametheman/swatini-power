@@ -4,7 +4,7 @@ import image from "../../Assets/Images/technology.jpeg";
 
 const Do3 = () => {
   return (
-    <Container>
+    <Container data-aos="zoom-in-down">
       <p>
         Our goal is to identify, finance and implement the right solutions that
         will allow our clients to minimize their energy costs, optimize their
@@ -23,6 +23,11 @@ const Container = styled.div`
   display: flex;
   padding: 40px 100px;
   flex-wrap: wrap;
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+  }
 
   p {
     flex: 0.8 0 8rem;
@@ -34,5 +39,12 @@ const Container = styled.div`
     width: 400px;
     height: 300px;
     object-fit: cover;
+    @media screen and (max-width: 480px) {
+      margin-top: 20px;
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 `;
