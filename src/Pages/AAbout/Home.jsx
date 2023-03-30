@@ -49,13 +49,16 @@ const Container = styled.div`
 const Absolutes = styled.section`
   background: linear-gradient(rgba(0, 0, 0, 0.544), rgba(0, 9, 13, 0.661)),
     url(${headBg});
-  height: 30vh;
+  height: 50vh;
   max-width: 1440px;
-
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (max-width: 480px) {
+    height: 30vh;
+  }
 `;
 
 const Content = styled.div`

@@ -106,6 +106,10 @@ const Absolutes = styled.section`
   background-position: center;
   background-size: cover;
   height: 50vh;
+
+  @media screen and (max-width: 480px) {
+    height: 30vh;
+  }
 `;
 
 const Content = styled.div`
