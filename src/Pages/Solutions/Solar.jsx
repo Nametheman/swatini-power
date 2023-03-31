@@ -43,7 +43,7 @@ const Container = styled.div`
     url(${bg}), no-repeat, center;
   height: 80vh;
   width: 100vw;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   max-height: 800px;
   margin: 120px 0;
 

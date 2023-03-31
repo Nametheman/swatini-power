@@ -40,6 +40,7 @@ const Home = () => {
 export default Home;
 const Container = styled.div`
   position: relative;
+  width: 100vw;
 
   .heading {
     font-family: "Coda", cursive;
@@ -73,10 +74,14 @@ const Container = styled.div`
 const HeroSection = styled.div``;
 
 const Absolutes = styled.section`
+  /* background: linear-gradient(rgba(56, 182, 255, 0.35), rgba(0, 9, 13, 0.65)),
+    url(${lekkiBridge}), no-repeat, center, center, fixed; */
   background: linear-gradient(rgba(56, 182, 255, 0.35), rgba(0, 9, 13, 0.65)),
-    url(${lekkiBridge}), no-repeat, center;
+    url(${lekkiBridge}), no-repeat, center, center, fixed;
+  background-size: cover;
   height: 100vh;
+  width: 100vw;
   max-height: 1000px;
   /* width: 100vw; */
-  max-width: 1440px;
+  /* max-width: 1440px; */
 `;

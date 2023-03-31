@@ -83,6 +83,7 @@ const Container = styled.footer`
   padding: 50px 130px 30px;
   /* margin-top: 40px; */
   display: flex;
+  width: 100vw;
   justify-content: space-between;
 
   @media screen and (max-width: 480px) {

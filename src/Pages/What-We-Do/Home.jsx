@@ -154,8 +154,9 @@ const Absolutes = styled.section`
   background: linear-gradient(rgba(14, 14, 14, 0.511), rgba(0, 9, 13, 0.65)),
     url(${streelLightImg}), no-repeat, center;
   height: 50vh;
+  background-size: cover;
   width: 100vw;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

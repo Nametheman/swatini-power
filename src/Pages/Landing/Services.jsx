@@ -75,6 +75,8 @@ export default Services;
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+
   gap: 1.4rem;
   padding: 15px 20px;
 

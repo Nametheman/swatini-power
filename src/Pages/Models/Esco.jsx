@@ -97,11 +97,12 @@ const Container = styled.div`
 
 const Absolutes = styled.section`
   background: linear-gradient(rgba(2, 22, 33, 0.969), rgba(0, 9, 13, 0.59)),
-    url(${bg}), no-repeat, center;
+    url(${bg}), no-repeat, center, center, fixed;
+  background-size: cover;
   /* transform: rotate(180deg); */
 
   width: 100vw;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
