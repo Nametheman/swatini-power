@@ -81,6 +81,9 @@ const Navbar = () => {
         {links.map((link) => {
           return <Link to={link.path}>{link.name}</Link>;
         })}
+        <a href="https://powerrent.swatinipower.com" target="_blank">
+          PowerRent
+        </a>
       </div>
     </Navigation>
   );

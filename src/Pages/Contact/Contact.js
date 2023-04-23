@@ -20,10 +20,10 @@ const Contact = () => {
     emailjs
       .sendForm(
         // setLoading(true),
-        "service_ca2cuip",
+        "service_d7n4p8o",
         "template_ogvu902",
         form.current,
-        "slpiNM7C64YRlRNzm"
+        "ewGhlBBTWQx6s-ala"
       )
       .then(
         (result) => {
@@ -46,7 +46,7 @@ const Contact = () => {
         (error) => {
           console.log(error.text);
           Swal.fire({
-            title: "Uh Uh",
+            title: "",
             text: "Failed to send!",
             // icon,
             confirmButtonText: "Cool",

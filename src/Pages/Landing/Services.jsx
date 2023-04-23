@@ -85,6 +85,10 @@ const Container = styled.div`
     flex: 1 0 18em;
     position: relative;
     height: 800px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 32px 2px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0px 0px 32px 2px rgba(0, 0, 0, 0.07);
+    -moz-box-shadow: 0px 0px 32px 2px rgba(0, 0, 0, 0.07);
     @media screen and (max-width: 1260px) {
       flex: 1 0 13em;
       height: 740px;
@@ -93,6 +97,10 @@ const Container = styled.div`
     img {
       width: 100%;
       height: 270px;
+      background: #f1f2f2;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+
       @media screen and (max-width: 1260px) {
         height: 200px;
       }
