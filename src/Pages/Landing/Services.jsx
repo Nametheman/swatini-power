@@ -17,6 +17,7 @@ const Services = () => {
         "Looking to reduce your organization's environmental impact while also cutting down on electricity costs? With a commercial solar installation, you can tap into the abundant energy of the sun to minimize your carbon footprint and decrease your reliance on traditional electrical utilities. Plus, by leveraging solar power during peak demand periods, you can enjoy significant savings on your energy bills while also contributing to a more sustainable future.",
       image: service1,
       id: "service1",
+    
     },
     {
       name: "Battery Energy Storage",
@@ -41,8 +42,11 @@ const Services = () => {
           <div
             className="card"
             key={service.id}
-            data-aos="fade-right"
-            data-aos-offset="300"
+            // data-aos="fade-right"
+            // data-aos-offset="300"
+            // data-aos-easing="ease-in-sine"
+
+            data-aos="zoom-in-down"
             data-aos-easing="ease-in-sine"
           >
             <img src={service.image} alt="" />

@@ -20,9 +20,9 @@ const Home = () => {
 
       <h3 className="heading">Our solution</h3>
       <div
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
+      // data-aos="fade-right"
+      // data-aos-offset="300"
+      // data-aos-easing="ease-in-sine"
       >
         <Services />
       </div>
@@ -61,27 +61,20 @@ const Container = styled.div`
       color: ${process.env.REACT_APP_SECONDARY_COLOR};
       text-decoration: none;
       font-weight: 600;
-      /* margin: 70px 0 30px; */
     }
     svg {
-      /* width: 100%; */
-      /* margin: auto 0; */
       color: ${process.env.REACT_APP_SECONDARY_COLOR};
     }
   }
 `;
 
-const HeroSection = styled.div``;
-
 const Absolutes = styled.section`
-  /* background: linear-gradient(rgba(56, 182, 255, 0.35), rgba(0, 9, 13, 0.65)),
-    url(${lekkiBridge}), no-repeat, center, center, fixed; */
   background: linear-gradient(rgba(56, 182, 255, 0.35), rgba(0, 9, 13, 0.65)),
     url(${lekkiBridge}), no-repeat, center, center, fixed;
   background-size: cover;
   height: 100vh;
   width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
   max-height: 1000px;
-  /* width: 100vw; */
-  /* max-width: 1440px; */
 `;

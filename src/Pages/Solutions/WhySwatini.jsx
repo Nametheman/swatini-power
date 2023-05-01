@@ -47,8 +47,8 @@ const Services = () => {
           <div
             className="card choice"
             key={service.id}
-            data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
-            data-aos-easing="ease-in-sine"
+            // data-aos={idx % 2 === 0 ? "fade-right" : "fade-left"}
+            // data-aos-easing="ease-in-sine"
           >
             <div className="info">
               <img src={service.image} alt="" />

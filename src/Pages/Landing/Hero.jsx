@@ -36,7 +36,7 @@ const Container = styled.div`
   top: 0;
 
   @media screen and (max-width: 480px) {
-    top: 80px;
+    top: 50px;
   }
 
   .content {

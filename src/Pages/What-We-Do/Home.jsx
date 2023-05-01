@@ -20,32 +20,39 @@ const Home = () => {
       <Hero />
       <div
         className="content1"
-        data-aos="zoom-in-right"
-        data-aos-offset="300"
+        data-aos="zoom-in-down"
         data-aos-easing="ease-in-sine"
       >
         <p>
-          At Swatini Power Ltd, we solve the energy problems of our clients. We
-          offer Energy-as-a-Service (EaaS) solutions for our commercial and
-          industrial clients. Our mission is to help businesses in Nigeria
-          achieve their sustainability goals and reduce their energy costs
-          through the implementation of efficient and sustainable energy
-          solutions.
+          <span data-aos-offset="300" data-aos-easing="ease-in-sine">
+            At Swatini Power Ltd, we solve the energy problems of our clients.
+            We offer Energy-as-a-Service (EaaS) solutions for our commercial and
+            industrial clients. Our mission is to help businesses in Nigeria
+            achieve their sustainability goals and reduce their energy costs
+            through the implementation of efficient and sustainable energy
+            solutions.
+          </span>
           <br /> <br />
-          At Swatini Power Ltd, we understand that energy is a critical
-          component of any business. However, the unstable power supply from the
-          national grid can be a significant challenge, driving up costs and
-          hindering operations, we are also aware that traditional energy
-          procurement models can be challenging for businesses due to high
-          upfront capital costs and ongoing operational expenses. That's why we
-          offer an EaaS model that allows businesses to access sustainable
-          energy solutions without the financial burden and risks associated
-          with owning and operating their own energy systems. <br /> <br /> Our
-          EaaS model is based on a pay-as-you-go or long-term power purchase
-          agreement that allows businesses to access reliable and affordable
-          energy solutions without the need for upfront capital expenditure. We
-          design, develop, finance, and implement customized energy solutions
-          that bring immediate relief to our clients.
+          <span
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            data-aos-delay="100"
+          >
+            At Swatini Power Ltd, we understand that energy is a critical
+            component of any business. However, the unstable power supply from
+            the national grid can be a significant challenge, driving up costs
+            and hindering operations, we are also aware that traditional energy
+            procurement models can be challenging for businesses due to high
+            upfront capital costs and ongoing operational expenses. That's why
+            we offer an EaaS model that allows businesses to access sustainable
+            energy solutions without the financial burden and risks associated
+            with owning and operating their own energy systems.
+          </span>
+          <br /> <br /> Our EaaS model is based on a pay-as-you-go or long-term
+          power purchase agreement that allows businesses to access reliable and
+          affordable energy solutions without the need for upfront capital
+          expenditure. We design, develop, finance, and implement customized
+          energy solutions that bring immediate relief to our clients.
         </p>
         <div className="img_container">
           <img src={generator} alt="" />

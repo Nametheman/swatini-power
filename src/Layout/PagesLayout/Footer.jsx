@@ -90,6 +90,7 @@ const Container = styled.footer`
     flex-direction: column;
     gap: 20px;
     padding: 50px;
+    max-width: 100vw;
   }
 
   /* flex-wrap: wrap; */

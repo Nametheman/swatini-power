@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { GrFormClose } from "react-icons/gr";
@@ -7,6 +7,23 @@ import service2 from "../../Assets/Images/batterystorage.jpeg";
 import service3 from "../../Assets/Images/energy_mgt.jpeg";
 
 const Modal = ({ isShow, show, id }) => {
+  useEffect(() => {
+    if (isShow) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = null;
+      document.body.style.position = null;
+    }
+
+    return () => {
+      document.body.style.overflow = null;
+      document.body.style.position = null;
+    };
+  }, [isShow]);
+
+  if (!isShow) {
+    return null;
+  }
   return ReactDOM.createPortal(
     <Container
       onClick={() => {
@@ -14,13 +31,6 @@ const Modal = ({ isShow, show, id }) => {
       }}
     >
       <ModalContainer>
-        {/* <CloseButton
-          onClick={() => {
-            isShow(false);
-          }}
-        >
-          <GrFormClose />
-        </CloseButton> */}
         {id === "service1" ? (
           <div className="Head">
             <h3>Commercial Solar Installation</h3>
