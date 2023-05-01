@@ -141,7 +141,7 @@ const OpenMenu = styled.div`
   position: absolute;
   top: 25px;
   right: 25px;
-  /* z-index: 53993s93939390000000000000; */
+  z-index: 100;
 
   svg {
     color: #fff;
